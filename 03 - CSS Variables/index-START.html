@@ -21,6 +21,25 @@
   <img src="https://source.unsplash.com/7bwQXzbF6KE/800x500">
 
   <style>
+    /* need to declare the default CSS variables, we are doing it in root, also done in HTML typically */
+    :root {
+      --base: #ffc600;
+      --spacing: 10px;
+      --blur: 10px;
+    }
+
+    /* using the variables follows the following syntax */
+    img {
+      padding: var(--spacing);
+      background: var(--base);
+      filter: blur(var(--blur));
+    }
+
+    .hl {
+      color: var(--base);
+    }
+
+
 
     /*
       misc styles, nothing to do with CSS variables
